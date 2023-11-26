@@ -3,6 +3,22 @@ ol {
   list-style-type: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .main-header {
   background: var(--WHITE, #fff);
 }
@@ -23,6 +39,14 @@ body {
   font-weight: 400;
   color: #434455;
 }
+
+/* .container { 
+max-width: 
+padding-left:  
+padding-right:  
+margin-left:  
+margin-right:  
+} */
 
 .logo {
   color: var(--IRIS, #4d5ae5);
