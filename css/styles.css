@@ -21,6 +21,7 @@ ul {
 
 .main-header {
   background: var(--WHITE, #fff);
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 
 .nav-list .link:hover,
@@ -40,13 +41,24 @@ body {
   color: #434455;
 }
 
-/* .container { 
-max-width: 
+.div-header {
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  /* max-width:   
 padding-left:  
 padding-right:  
 margin-left:  
-margin-right:  
-} */
+margin-right:   */
+}
 
 .logo {
   color: var(--IRIS, #4d5ae5);
@@ -56,6 +68,7 @@ margin-right:
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-footer {
@@ -116,6 +129,7 @@ span {
 
 .first-section {
   background: var(--NAVY-BLUE, #2e2f42);
+  padding: 188px 0;
 }
 
 .main-title {
@@ -125,6 +139,7 @@ span {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
 }
 
 .button {
@@ -135,6 +150,11 @@ span {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .button:hover {
@@ -218,4 +238,116 @@ span {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+img {
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  padding: 24px 0;
+}
+
+.address-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.second-section {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.main-information {
+  display: flex;
+  gap: 24px;
+}
+
+.main-information-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.descr-sec-section {
+  margin-bottom: 8px;
+}
+
+.our-team-section {
+  padding: 120px 0;
+}
+
+.our-team {
+  margin-bottom: 72px;
+}
+
+.team-pictures {
+  display: flex;
+  gap: 24px;
+}
+
+.team-pictures-list {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-information-div {
+  padding: 32px 0;
+}
+
+.team-names {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.job-position {
+  text-align: center;
+}
+
+.our-portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.our-portfolio-title {
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.our-portfolio-list {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-div {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+
+.footer-section {
+  padding: 100px 0;
+}
+
+.link-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
