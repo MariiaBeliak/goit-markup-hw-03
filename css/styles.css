@@ -53,11 +53,7 @@ body {
 .container {
   width: 1158px;
   padding: 0 15px;
-  /* max-width:   
-padding-left:  
-padding-right:  
-margin-left:  
-margin-right:   */
+  margin: 0 auto;
 }
 
 .logo {
