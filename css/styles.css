@@ -1,17 +1,80 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 141px;
+  margin-right:141px;
+}
+
 body {
   background: #fff;
   font-family: "Roboto", sans-serif;
   color: #434455;
+  width: 1440px;
+  НЕ УВЕРЕНА,
+  ЧТО ТАК ПРАВИЛЬНО height: 600px;
+  НЕ УВЕРЕНА,
+  ЧТО ТАК ПРАВИЛЬНО
 }
 
-ul {
+
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit;}
+
+
+
+/* ВАЖНО!! ОБРАТИ НА ЭТО ВНИМАНИЕ, 
+ПОЧИТАЙ ТО, ЧТО НА ЖЕЛТОМ ФОНЕ 3 МОДУЛЯ*/
+.header{
+  border-bottom: 1px solid #e7e9fc;
 }
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
+.header-nav{
+  display: flex;
+}
+.header-list{
+  display: flex;
+  gap: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: #fff;
+}
+
 .header-link:hover,
 .header-link:focus {
   color: #404bbf;
@@ -19,9 +82,7 @@ a {
 
 .header-link {
   color: #2e2f42;
-}
-.button {
-  cursor: pointer;
+  
 }
 
 .button:hover,
@@ -47,6 +108,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-item {
@@ -59,11 +121,19 @@ a {
 .header-adress {
   font-style: normal;
 }
+.address-item{
+  display: flex;
+  gap: 40px;
+  
+}
 .address-link {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-link:hover,
@@ -73,8 +143,13 @@ a {
 
 .main-section {
   background: #2e2f42;
+  /* padding-bottom: 292px;
+  padding-top: 188px; */
 }
-
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -82,8 +157,13 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  /* padding-top: 188px; */
+  margin-bottom: 48px;
 }
+
 .button {
+  display: block;
+  cursor: pointer;
   background: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -91,6 +171,40 @@ a {
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
+  border-radius: 4px;
+padding: 16px 32px;
+  margin: auto;
+
+}
+
+/* Secont section */
+
+.adv-sec-list{
+  display: flex;
+  gap: 24px;
+    
+}
+
+.adv-sec-item{
+
+  width: calc((100% - 72px) /4);
+  flex-grow: 1;
+
+}
+
+/* Visually hidden */
+.adv-sec-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .adv-sec-subtitle {
@@ -99,6 +213,7 @@ a {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .adv-sec-descr {
@@ -111,9 +226,11 @@ a {
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+/* Third section */
 .team-section {
   background-color: #f4f4fd;
 }
+
 .team-sec-main-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -123,14 +240,30 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team-sec-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-sec-item {
   background-color: #ffffff;
+  width: calc((100% - 70px) /4);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+  border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+   
+   
 }
+
 .team-sec-img {
   background: #fff;
+  margin-bottom: 32px;
 }
+
 .team-sec-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -139,6 +272,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-sec-descr {
@@ -151,6 +285,8 @@ a {
   color: #434455;
 }
 
+
+/* Fourth section */
 .portfolio-main-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -160,8 +296,21 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list{
+  display: flex;
+  row-gap: 48px;
+  column-gap: 24px;
+    flex-wrap: wrap;
+}
+.portfolio-item{
+  width: calc((100% - 48px) /3);
 }
 
+.portfolio-img{
+  margin-bottom: 32px;
+}
 .portfolio-subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -169,6 +318,8 @@ a {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-left: 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-descr {
@@ -178,9 +329,15 @@ a {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-left: 16px;
 }
+
+
+/* Footer */
 .footer {
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-descr {
@@ -190,6 +347,7 @@ a {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 .footer-logo {
@@ -201,3 +359,16 @@ a {
   text-transform: uppercase;
   color: #f4f4fd;
 }
+
+.footer-container .logo
+{
+  display: block;
+  margin-bottom: 16px;
+}
+/* .team-sec-list{
+  display: flex;
+  flex-direction: row;
+}
+.team-sec-item{
+  margin-right: 24px;
+} */
