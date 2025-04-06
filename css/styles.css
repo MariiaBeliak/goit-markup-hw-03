@@ -135,15 +135,17 @@ background: #fff;
   color: #404bbf;
 }
 
-.main-section {
-  background: #2e2f42;
-  padding: 188px 0;
-}
 
 .section{
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.main-section {
+  background: #2e2f42;
+  padding: 188px 0;
+}
+
 .main-title {
   font-weight: 700;
   font-size: 56px;
