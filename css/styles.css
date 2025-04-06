@@ -1,8 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 h1,
 h2,
@@ -32,10 +27,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   width: 1440px;
-  НЕ УВЕРЕНА,
-  ЧТО ТАК ПРАВИЛЬНО height: 600px;
-  НЕ УВЕРЕНА,
-  ЧТО ТАК ПРАВИЛЬНО
+  height: 600px;
+
 }
 
 
@@ -133,7 +126,7 @@ background: #fff;
   letter-spacing: 0.02em;
   color: #434455;
   display: block;
-  padding-top: 24px 0;
+  padding: 24px 0;
   
 }
 
@@ -146,6 +139,7 @@ background: #fff;
   background: #2e2f42;
   padding: 188px 0;
 }
+
 .section{
   padding-top: 120px;
   padding-bottom: 120px;
@@ -336,6 +330,7 @@ padding: 16px 32px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-left: 16px;
+  margin-bottom: 8px
   
 }
 
