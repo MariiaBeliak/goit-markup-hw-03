@@ -67,6 +67,7 @@ align-items: center;
 }
 .header-nav{
   display: flex;
+  align-items: center;
 }
 .header-list{
   display: flex;
@@ -132,8 +133,8 @@ background: #fff;
   letter-spacing: 0.02em;
   color: #434455;
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 24px 0;
+  
 }
 
 .address-link:hover,
@@ -143,8 +144,7 @@ background: #fff;
 
 .main-section {
   background: #2e2f42;
-  /* padding-bottom: 292px;
-  padding-top: 188px; */
+  padding: 188px 0;
 }
 .section{
   padding-top: 120px;
@@ -159,6 +159,8 @@ background: #fff;
   color: #fff;
   /* padding-top: 188px; */
   margin-bottom: 48px;
+   max-width: 496px;
+   
 }
 
 .button {
@@ -174,6 +176,9 @@ background: #fff;
   border-radius: 4px;
 padding: 16px 32px;
   margin: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 
 }
 
@@ -263,6 +268,9 @@ padding: 16px 32px;
   background: #fff;
   margin-bottom: 32px;
 }
+.team-subcontainer{
+  padding: 32px 0;
+}
 
 .team-sec-title {
   font-family: "Roboto", sans-serif;
@@ -273,6 +281,7 @@ padding: 16px 32px;
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-sec-descr {
@@ -283,6 +292,7 @@ padding: 16px 32px;
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  text-align: center;
 }
 
 
@@ -311,6 +321,13 @@ padding: 16px 32px;
 .portfolio-img{
   margin-bottom: 32px;
 }
+
+.portfolio-subcontainer{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
 .portfolio-subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -319,7 +336,7 @@ padding: 16px 32px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-left: 16px;
-  margin-bottom: 8px;
+  
 }
 
 .portfolio-descr {
@@ -329,7 +346,7 @@ padding: 16px 32px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-left: 16px;
+  
 }
 
 
@@ -362,7 +379,7 @@ padding: 16px 32px;
 
 .footer-container .logo
 {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 /* .team-sec-list{
