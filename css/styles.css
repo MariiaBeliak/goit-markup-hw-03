@@ -149,7 +149,6 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    padding-top: 188px;
     width: 496px;
     margin: auto;
     margin-bottom: 48px;
@@ -171,9 +170,7 @@ body {
 
 }
 
-.main-container {
-    padding-bottom: 188px;
-}
+
 
 .main-btn:hover,
 .main-btn:focus {
