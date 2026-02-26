@@ -4,7 +4,7 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 }
-
+   
 a {
     text-decoration: none;
     color: inherit;
@@ -31,14 +31,16 @@ img {
 
 .section {
     padding-top: 120px;
-    padding-left: 120px;
+    padding-bottom: 120px;
 }
 
 .container {
     max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+    padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 body {
     font-family: "Roboto", sans-serif;
@@ -49,11 +51,13 @@ body {
 /* Styles for header */
 .header {
     display: flex;
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-wrap {
     display: flex;
+    /* justify-content: space-between;
+        align-items: center; */
 }
 
 .nav {
@@ -310,7 +314,8 @@ body {
 
 .portfolio-text-wrap {
     padding: 32px 16px;
-    border: 1px;;
+        border: 1px solid #e7e9fc;
+        border-top: none;
 }
 
 .portfolio-subtitle {
